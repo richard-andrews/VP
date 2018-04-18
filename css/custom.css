@@ -93,7 +93,7 @@
 .values {
 
     /* The image used */
-    background-image: url("../images/img1.jpg");
+    background-image: url("../images/study.jpg");
 
     /* Full height */
     height: 100%; 
@@ -117,7 +117,7 @@
 .values-2 {
 
     /* The image used */
-    background-image: url("../images/img2.jpg");
+    background-image: url("../images/computing.jpg");
 
     /* Full height */
     height: 100%; 
@@ -141,7 +141,7 @@
 .values-3 {
 
     /* The image used */
-    background-image: url("../images/img3.jpg");
+    background-image: url("../images/physics.jpg");
 
     /* Full height */
     height: 100%; 
