@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Richard Andrews Coursework</title>
+  <title>PRYZM Young Enterprise Team</title>
   <meta name="description" content="">
   <meta name="author" content="">
 	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
-
-  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/sss.png">
 
 	<!-- smooth scrolling javascript below -->
 	<script>
@@ -57,8 +62,9 @@
     <div class="container">
       <div class="row">
         <div class="one-half column">
-          <h5 class="hero-heading">Richard Andrews</h5>
-		  <p class="value-description">My A Level Coursework</p>
+          <h5 class="hero-heading">PRYZM</h4>
+		  <p class="value-description">A branch of Young Enterprise at Colchester Royal Grammar School</p>
+          <a class="button button-primary" href="#liquidation">Learn More</a>
         </div>
         <div class="one-half column phones">
           <img class="phone" src="images/sss.png">
@@ -70,9 +76,24 @@
 
     <div id="navbar">
   <a class="active" href="#top">Home</a>
-  <a href="#About">About</a>
-  <a href="#Computing">Computing</a>
-  <a href="#Physics">Physics</a>
+  <a href="#AboutUs">About Us</a>
+  <a href="#Product">Our Product</a>
+  <a href="#YEinfo">Young Enterprise</a>
+  <a href="#contactform">Contact</a>
+	     <div class="gcse-searchbox" style="width:350px; height:10px; margin-top:-28px;"><script> //this is the problem div with the search bar
+  (function() {
+    var cx = '001421299546961312556:94gicxmlqie';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+		     
+</script>
+		     <gcse:search></gcse:search></div>
+</div>
     
     <script>
 window.onscroll = function() {myFunction()};
@@ -87,7 +108,7 @@ function myFunction() {
 }
 </script>
     
-  <div class="section values" id="Villier's Start">
+  <div class="section values" id="liquidation">
     <div class="container">
       <div class="row"> <!-- Countdown Timer from w3 -->
         <!-- Display the countdown timer in an element -->
@@ -95,7 +116,7 @@ function myFunction() {
 
           <script>
               // Set the date we're counting down to
-              var countDownDate = new Date("Apr 30, 2018 00:00:00").getTime();
+              var countDownDate = new Date("Jul 31, 2018 00:00:00").getTime();
               // Update the count down every 1 second
               var x = setInterval(function() {
                   // Get todays date and time
@@ -121,7 +142,7 @@ function myFunction() {
                 }
               }, 1000);
           </script>
-          <p class="value-description">Villier's Park Computer Science: Logic to Application will start on 30th April 2018 at 1pm</p>
+          <p class="value-description">This company will be liquidated on 31st July 2018</p>
         </div>
       </div>
     </div>
@@ -150,15 +171,42 @@ function myFunction() {
   </div>
 </div>
 
-
+  <div class="section values-3" id="contactform">
+    <div class="container">
+	    <h3 class="section-heading">Contact Us</h3>
+	    <form id="emailform" action="https://formspree.io/scott2000jones@gmail.com"
+      method="POST">
+		    <div class="row">
+			    <div class="six columns">
+				    <label for="exampleEmailInput">Your email</label>
+				    <input class="u-full-width" type="email" placeholder="blank@mailbox.com" id="exampleEmailInput" name="emailAddress">
+			    </div>
+			    <div class="six columns">
+				    <label for="exampleEmailInput">Your name</label>
+				    <input class="u-full-width" type="text" placeholder="What's your name?" id="exampleEmailInput" name="name">
+			    </div>
+		    </div>
+		    <label for="exampleMessage">Message</label>
+		    <textarea class="u-full-width" placeholder="What do you want to say?" id="exampleMessage" name="textArea"></textarea>
+		    <!-- <label class="example-send-yourself-copy">
+			    <input type="checkbox">
+			    <span class="label-body">Send a copy to yourself</span>
+		    </label> -->
+		    <input class="button-primary" type="submit" value="Submit" name="submitButton">
+		    
+	    </form>
 	    <p class="label-body">Or you can contact us on our twitter page @PRYZMTEAM
 	    <a style="float:center" href="https://twitter.com/PRYZMTEAM?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @PRYZMTEAM</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	        
-	   <p class=label-body">This site is hosted on GitHub with GitHub pages, and is built with HTML, Javascript and CSS on the <a href="http://getskeleton.com/" style="color: #cc0000">Skeleton framework</a>. All background images are taken from <a href="https://unsplash.com/" style="color: #cc0000">Unsplash.com</a> and are used for free under the Unsplash License.</p>
+	   <p class=label-body">This site is hosted on GitHub with GitHub pages, and is built with HTML and CSS on the <a href="http://getskeleton.com/" style="color: #cc0000">Skeleton framework</a>. To view our source code, visit our <a href="https://github.com/scott2000jones/pryzm" style="color: #cc0000">GitHub Repository</a>. All background images are taken from <a href="https://unsplash.com/" style="color: #cc0000">Unsplash.com</a> and are used for free under the Unsplash License.</p>
 	
 	  </div>
 	  
 	  <!-- <div class="container">
+	    <h3 class="section-heading">Contact Us</h3>
+		  <p class=label-body">You can send a business enquiry to our email teampryzm@hotmail.com</p>
+		  <p class="label-body">Or you can contact us on our twitter page @PRYZMTEAM
+	    <a style="float:center" href="https://twitter.com/PRYZMTEAM?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @PRYZMTEAM</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 	     								   
 	  <p class=label-body">This site is hosted on GitHub with GitHub pages, and is built on the <a href="http://getskeleton.com/" style="color: #cc0000">Skeleton framework</a>. All background images are taken from <a href="https://unsplash.com/" style="color: #cc0000">Unsplash.com</a> and are used for free under the Unsplash License.</p>
 	  </div> -->
@@ -168,4 +216,3 @@ function myFunction() {
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
