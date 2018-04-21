@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>PRYZM Young Enterprise Team</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- smooth scrolling javascript below -->
+	<script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+					// Store hash
+					var hash = this.hash;
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	function topFunction() {
+    		document.body.scrollTop = 0;
+    		document.documentElement.scrollTop = 0;
+	}
+	
+	</script>
+	
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/pryzm_transparent.png">
+	</head>
+	<body>
+		   <span class="fixo" style="font-size:30px;cursor:pointer" onclick="topFunction()"></span>
+		   
+	<div class="section values" id="heading">
+		<div class="container">
+			<h3 class="value-multiplier">About Us</h3>
+			<p class="section-description">Find out more about who we are and what we aim to do</p>
+			<a class="button button-primary" href="#content">Learn More</a>
+		</div>
+	</div>
+	
+	<div class="section get-help" id="content">
+    <div class="container">
+      <!-- <h3 class="section-heading">A Young Enterprise Business</h3> -->
+      <p class="section-description">Team Pryzm is a Colchester Royal Grammar School company with a strong 15-member team.  Pryzm is going to design and sell a mental wellbeing resource for ages 11-18. It will be mainly written by the team however input will come from in-depth online research and charities with greater knowledge of certain topic areas. The resource will come in the form of a booklet and a website, with the booklet being the main product generating income and the website offering additional information and advice for free.</p>
+	    <p class="section-description">Our team consists of:</p> 
+	    <ul>
+  		    <li>Sol Hyde - MD </li>
+  		    <li>Lily Filer - Administration</li>
+  		    <li>Stella Blezard - Marketing</li>
+		    <li>Aurelien Ghiglino - Operations</li>
+		    <li>Scott Jones - IT</li>
+		    <li>Fergal Looney - Social Media</li>
+		    <li>Imogen Morris - Sales</li>
+		    <li>Mia Palmer - Finance</li>
+		    <li>David Popovici - IT</li>
+		    <li>Ieuan Thomas - Marketing </li>
+		    <li>Stevie Vass - Sales</li>
+		    <li>Rhys Williams - Finance</li>
+		    <li>Alex Woods - HR</li>
+		    <li>Sam Woodward - Operations</li>
+		    <li>Thomas Wright - Sales</li>
+	      </ul>
+<p class="section-description">Our team is strong as a collective but has many skills as individuals including designing websites and running finances. We are all focused on developing this project and believe it can truly benefit those who purchase it.
+</p>
+      <!-- <a class="button button-primary" href="https://www.young-enterprise.org.uk">Find out more about Young Enterprise</a> -->
+	    <a class="button button-primary" href="index.html">Back to home</a>
+    </div>
+  </div>
+	</body>
+</html>
