@@ -162,6 +162,30 @@
 
 }
 
+.about {
+
+    /* The image used */
+    background-image: url("../images/study.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  /*background-image: url('../images/Purple_Love.jpg');*/
+
+  background-size: cover;
+
+  color: #fff;
+
+  padding-bottom: 5rem;
+
+}
+
 .value-multiplier {
 
   margin-bottom: .5rem;
