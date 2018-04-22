@@ -170,7 +170,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: none;
+  display: inline-block;
   height: 38px;
   padding: 0 30px;
   color: #555;
@@ -187,10 +187,7 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99; }
+  position: fixed;}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
