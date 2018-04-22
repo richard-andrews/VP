@@ -55,7 +55,7 @@
 	</script>
 	</head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -84,7 +84,7 @@
 </div>
     
     <script>
-window.onscroll = function() {myFunction()} {scrollfunction()};
+window.onscroll = function() {myFunction()} 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 function myFunction() {
@@ -94,20 +94,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-	    
-	    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+	
 	</script>
     
   <div class="section part-1" id="start">
