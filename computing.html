@@ -60,7 +60,31 @@
 	<body>
 		   <span class="fixo" style="font-size:30px;cursor:pointer" onclick="topFunction()"></span>
 		   
-	<div class="section part-2" id="heading">
+		
+		   <div id="navbar">
+  <a  href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a class="active" href="#top">Computing</a>
+  <a href="physics.html">Physics</a>
+
+</div>
+    
+    <script>
+window.onscroll = function() {myFunction()} 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	
+	</script>
+		
+		
+	<div class="section part-2" id="top">
 		<div class="container">
 			<h3 class="value-multiplier">Computing</h3>
 			<p class="section-description">Learn more about my Computing A Level Coursework.</p>
