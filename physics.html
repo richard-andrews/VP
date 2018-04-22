@@ -37,23 +37,6 @@
     		document.documentElement.scrollTop = 0;
 	}
 	
-		// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-		
 	</script>
 
   <!-- Mobile Specific Metas
@@ -75,8 +58,32 @@ function topFunction() {
   <link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 	<body>
-		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<div class="section part-3" id="heading">
+		
+		
+		<div id="navbar">
+  <a  href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="computing.html">Computing</a>
+  <a class="active" href="#top">Physics</a>
+
+</div>
+    
+    <script>
+window.onscroll = function() {myFunction()} 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	
+	</script>
+		
+		
+	<div class="section part-3" id="top">
 		<div class="container">
 			<h3 class="value-multiplier">Physics</h3>
 			<p class="section-description">Learn more about my Computing A Level Coursework.</p>
