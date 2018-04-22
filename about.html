@@ -58,9 +58,34 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
 	<body>
+		
+		
+				<div id="navbar">
+  <a href="index.html">Home</a>
+  <a class="active" href="#top">About</a>
+  <a href="computing.html">Computing</a>
+  <a href="physics.html">Physics</a>
+
+</div>
+    
+    <script>
+window.onscroll = function() {myFunction()} 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+	
+	</script>
+		
+		
 		   <span class="fixo" style="font-size:30px;cursor:pointer" onclick="topFunction()"></span>
 		   
-	<div class="section about" id="heading">
+	<div class="section about" id="top">
 		<div class="container">
 			<h3 class="value-multiplier">About Me</h3>
 			<p class="section-description">Find out more about me</p>
