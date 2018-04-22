@@ -29,7 +29,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- smooth scrolling javascript below -->
-	<script>
+	script>
 		$(document).ready(function(){
 			// Add smooth scrolling to all links
 			$("a").on('click', function(event) {
@@ -50,12 +50,34 @@
 				} // End if
 			});
 		});
+	function topFunction() {
+    		document.body.scrollTop = 0;
+    		document.documentElement.scrollTop = 0;
+	}
 	
-	
+		// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+		
 	</script>
 	</head>
 <body>
-
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -75,27 +97,7 @@
     </div>
   </div>
 
-    <div id="navbar">
-  <a class="active" href="#top">Home</a>
-  <a href="#About">About</a>
-  <a href="#Computing">Computing</a>
-  <a href="#Physics">Physics</a>
-
-</div>
-    
-    <script>
-window.onscroll = function() {myFunction()} 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-	
-	</script>
+ 
     
   <div class="section part-1" id="start">
     <div class="container">
